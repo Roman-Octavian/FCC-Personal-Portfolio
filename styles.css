@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(0, 132, 255), rgb(107, 208, 255), rgb(177, 230, 255));
+    width: 100%;
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: "Montserrat", helvetica;
+    font-size: 10rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    animation-name: h1ani;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h1ani {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        font-size: 1rem;
+    }
+    100% {
+        color: rgba(255, 255, 255, 1);
+        font-size: 10rem;
+    }
+}
+
+#subtitle {
+    font-family: "Major Mono Display", monospace;
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    height: 7vh;
+    width: 100%;
+    background-color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+
+#logo > img:hover {
+    height: 40px;
+    width: 40px;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5vw;
+}
+
+#text > p {
+    color: rgb(0, 132, 255);
+    font-size: 2rem;
+    font-family: "Major Mono Display", monospace;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 2vw;
+    margin-left: auto;
+    text-indent: 2vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+    font-size: 2rem;
+    font-family: "Major Mono Display", monospace;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: rgb(0, 38, 255);
+    font-family: "Major Mono Display", monospace;
+    animation-name: size;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes size {
+    25% {
+        font-size: 2.1rem;
+    }
+    50% {
+        font-size: 2.2rem;
+    }
+    75% {
+        font-size: 2.3rem;
+    }
+    100% {
+        font-size: 2.4rem;
+    }
+}
+
+h2 {
+    font-family: "Major Mono Display", "Montserrat", arial;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2vh;
+}

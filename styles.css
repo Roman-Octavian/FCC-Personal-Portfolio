@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap');
 
 :root {
     font-size: 62.5%;
@@ -28,7 +29,7 @@ h1 {
     text-align: center;
     color: rgba(255, 255, 255, 0);
     animation-name: h1ani;
-    animation-duration: 2000ms;
+    animation-duration: 3000ms;
     animation-fill-mode: forwards;
 }
 
@@ -45,7 +46,6 @@ h1 {
 
 #subtitle {
     font-family: "Major Mono Display", monospace;
-    position: relative;
     font-size: 5rem;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -74,7 +74,7 @@ nav {
 #text {
     display: flex;
     align-items: center;
-    margin-left: 0.5vw;
+    margin-left: 1vw;
 }
 
 #text > p {
@@ -124,9 +124,252 @@ nav {
     }
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 5% 1vh 5%;
+}
+
 h2 {
-    font-family: "Major Mono Display", "Montserrat", arial;
-    font-size: 4rem;
+    font-family: "Montserrat", arial;
+    font-size: 5rem;
     text-align: center;
     margin-top: 2vh;
+    margin-bottom: 8vh;
+    color: rgb(0, 132, 255);
+    text-decoration: underline;
+}
+
+#first-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+}
+
+.odd {
+    margin-right: 2%;
+}
+
+.even {
+    margin-left: 2%;
+}
+
+#second-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+}
+
+.project-tile {
+    border: ridge medium rgb(0, 132, 255);
+    border-radius: 1%;
+    text-decoration: none;
+}
+
+.project-img {
+    width: 100%;
+    height: 91%;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.tile-description {
+    display: flex;
+    background-color: rgb(0, 132, 255);
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 5vh;
+    font-size: 2.5rem;
+    font-family: "Alegreya Sans SC", "Montserrat", arial;
+}
+
+footer {
+    border-top: medium solid rgb(0, 132, 255);
+    height: 20vh;
+    background-color: #F9F9FA;
+    margin-top: 5vh;
+
+}
+
+#contact-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 7.5vh 4vw 2vh 4vw;
+
+}
+
+.p-link {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    text-indent: 1vw;
+    color: rgb(0, 132, 255);
+    font-size: 2rem;
+    font-family: "Alegreya Sans SC", "Montserrat", arial;
+}
+.p-link:hover {
+    transform: scale(1.1);
+    color: rgb(0, 38, 255);
+}
+
+#footer-text {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 3.5rem;
+    font-family: "Montserrat", arial;
+    color: rgb(0, 132, 255);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+
+    /* START NAV-BAR */
+
+    #logo-img {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+    }
+
+    #logo {
+        margin-left: 1.2vw;
+    }
+    
+    #logo > img:hover {
+        height: 30px;
+        width: 30px;
+    }
+
+    #text > p {
+        font-size: 1.2rem;
+    }
+
+    #nav-ul {
+        margin-right: 1.2vw;
+        margin-left: auto;
+        text-indent: 2vw;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav-link:hover {
+        animation: none;
+    } 
+
+    /* END NAV-BAR */
+
+    /* START WELCOME-SECTION */
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1vh;
+    }
+    
+    @keyframes h1ani {
+        0% {
+            color: rgba(255, 255, 255, 0);
+            font-size: 1rem;
+        }
+        100% {
+            color: rgba(255, 255, 255, 1);
+            font-size: 4rem;
+        }
+    }
+
+    #subtitle {
+        font-size: 2rem;
+    }
+    
+    /* END WELCOME-SECTION */
+
+    /* START PROJECTS */
+
+    #projects {
+        margin: 1vh 4% 1vh 4%;
+    }
+    
+    h2 {
+        font-family: "Montserrat", arial;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        margin-bottom: 5vh;
+    }
+
+    #first-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    
+    #second-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .odd {
+        margin-right: 0;
+        margin-bottom: 5vh;
+    }
+    
+    .even {
+        margin-left: 0;
+        margin-bottom: 5vh;
+    }
+
+    .tile-description {
+        height: inherit;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    /* END PROJECTS */
+
+    /* START FOOTER */
+
+    footer {
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    #footer-text {
+        margin-top: 2vh;
+        font-size: 1.8rem;
+    }
+
+    #contact-links {
+        list-style-type: none;
+        display: inline-block;
+        margin: 3vh 0 3vh 3vw;
+    
+    }
+
+    .p-link {
+        text-indent: 1vw;
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+    }
+
+    .p-link:hover {
+        transform: none;
+        color: rgb(0, 38, 255);
+    }
+    /* END FOOTER */
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    
 }

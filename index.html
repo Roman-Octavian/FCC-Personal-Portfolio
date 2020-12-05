@@ -21,37 +21,50 @@
 
 <nav id="navbar">
 <div id="logo">
-<img src="images/logo.png" alt="Portfolio Logo" width=35 height=35>
+<img id="logo-img" src="images/logo.png" alt="Portfolio Logo" width=35 height=35>
 </div>
 <div id="text">
 <p>Web Development</p>
 </div>
 <ul id="nav-ul">
-    <li><a class="nav-link" href="#">Home</a></li>
-    <li><a class="nav-link" href="#">Projects</a></li>
-    <li><a class="nav-link" href="#">Contact</a></li>
+    <li><a class="nav-link" href="#welcome-section">Home</a></li>
+    <li><a class="nav-link" href="#projects">Projects</a></li>
+    <li><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
 </nav>
 
 <main>
 <section id="welcome-section">
     <div id="title">
-    <h1>Roman Octavian</h1>
-    <p id="subtitle">&ndash;Novice Web Developer&ndash;</p>
+        <h1>Roman Octavian</h1>
+        <p id="subtitle">&ndash;Novice Web Developer&ndash;</p>
     </div>
 </section>
 
+<hr>
+
 <section id="projects">
-<h2>&ndash;Projects&ndash;</h2>
-
-
+    <h2>Projects</h2>
+    <div id="first-row">
+        <a class="project-tile odd" href="https://roman-octavian.github.io/FCC-Tribute-Page" target="_blank"><img class="project-img" src="images/Tribute_Page.png" alt="Tribute Page Project" height="765" width="1349"><p class="tile-description">Tribute Page Project</p></a>
+        <a class="project-tile even" href="https://roman-octavian.github.io/FCC-Survey-Form" target="_blank"><img class="project-img" src="images/Survey_Form.png" alt="Survey Form Project" height="764" width="1351"><p class="tile-description">Survey Form Project</p></a>
+    </div>
+    <div id="second-row">
+        <a class="project-tile odd" href="https://roman-octavian.github.io/FCC-Product-Landing" target="_blank"><img class="project-img" src="images/Product_Landing.png" alt="Product Landing Page Project" height="765" width="1347"><p class="tile-description">Product Landing Page Project</p></a>
+        <a class="project-tile even" href="https://roman-octavian.github.io/FCC-Technical-Documentation" target="_blank"><img class="project-img" src="images/Technical_Documentation.png" alt="Technical Documentation Project" height="763" width="1366"><p class="tile-description">Technical Documentation Project</p></a>
+    </div>
 </section>
 
 </main>
 
-<footer>
-
-
+<footer id="contact">
+<p id="footer-text">Get In Touch:</p>
+<ul id="contact-links">
+<li><a href="https://github.com/Roman-Octavian" target="_blank" id="profile-link" class="p-link"><img src="images/github-icon.png" alt="github-icon" width="32" height="32">GitHub</a></li>
+<li><a href="https://www.freecodecamp.org/octavianroman" target="_blank" class="p-link"><img src="images/freecodecamp-icon.png" alt="github-icon" width="32" height="32">freeCodeCamp</a></li>
+<li><a href="https://www.linkedin.com/in/romanoctavian/" target="_blank" class="p-link"><img src="images/linkedin-icon.png" alt="github-icon" width="32" height="32">LinkedIn</a></li>
+<li><a href="mailto:work.octavian@gmail.com" target="_blank" class="p-link"><img src="images/email-icon.png" alt="github-icon" width="32" height="32">E-mail</a></li>
+</ul>
 
 </footer>
 

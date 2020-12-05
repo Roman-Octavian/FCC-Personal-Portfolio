@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #welcome-section {
     display: flex;
     align-items: center;
@@ -181,14 +185,13 @@ h2 {
     justify-content: center;
     color: white;
     align-items: center;
-    height: 5vh;
+    height: 9%;
     font-size: 2.5rem;
     font-family: "Alegreya Sans SC", "Montserrat", arial;
 }
 
 footer {
     border-top: medium solid rgb(0, 132, 255);
-    height: 20vh;
     background-color: #F9F9FA;
     margin-top: 5vh;
 
@@ -224,6 +227,19 @@ footer {
     font-size: 3.5rem;
     font-family: "Montserrat", arial;
     color: rgb(0, 132, 255);
+}
+
+hr {
+    color: rgb(0, 132, 255);
+}
+
+#legal {
+    font-size: 1.2rem;
+    font-family: arial;
+    color: darkgray;
+    text-align: center;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN START HERE */
@@ -299,9 +315,7 @@ footer {
     }
     
     h2 {
-        font-family: "Montserrat", arial;
         font-size: 2.5rem;
-        text-decoration: underline;
         margin-bottom: 5vh;
     }
 
@@ -330,7 +344,7 @@ footer {
     }
 
     .tile-description {
-        height: inherit;
+        height: 9%;
         font-size: 1.5rem;
         margin-bottom: 0;
     }
@@ -357,7 +371,7 @@ footer {
     }
 
     .p-link {
-        text-indent: 1vw;
+        text-indent: 2vw;
         font-size: 1.5rem;
         margin-bottom: 1vh;
     }
@@ -372,4 +386,63 @@ footer {
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
     
+    /* START NAV-BAR */
+
+    #logo > img:hover {
+        height: 35px;
+        width: 35px;
+    }
+
+    #text > p {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .nav-link:hover {
+        animation: none;
+    } 
+
+    /* END NAV-BAR */
+
+    /* START WELCOME-SECTION */
+
+    h1 {
+        font-size: 6.5rem;
+        margin-bottom: 1vh;
+    }
+    
+    @keyframes h1ani {
+        0% {
+            color: rgba(255, 255, 255, 0);
+            font-size: 1rem;
+        }
+        100% {
+            color: rgba(255, 255, 255, 1);
+            font-size: 6.5rem;
+        }
+    }
+
+    #subtitle {
+        font-size: 3.25rem;
+    }
+    
+    /* END WELCOME-SECTION */
+
+    /* START PROJECTS */
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 3vh;
+    }
+
+    .tile-description {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        height: 9%;
+    }
+
+    /* END PROJECTS */
 }
